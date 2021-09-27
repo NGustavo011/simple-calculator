@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <title>Calculadora</title>
+</head>
+<body id="calculator-page">
+    <main>
+        <article>   
+            <section id="calculator-head">
+                <span id="stored-calculation"></span>
+                <span id="current-calculation"><span id="blink-text">_</span></span>
+            </section>
+            <section id="calculator-body">
+                <button class="ac" style="grid-area: ac">AC</button>
+                <button class="del" style="grid-area: del">DEL</button>
+                <button class="operator" style="grid-area: div">÷</button>
+
+                <button class="number" style="grid-area: seven">7</button>
+                <button class="number" style="grid-area: eight">8</button>
+                <button class="number" style="grid-area: nine">9</button>
+                <button class="operator" style="grid-area: mult">*</button>
+                
+                <button class="number" style="grid-area: four">4</button>
+                <button class="number" style="grid-area: five">5</button>
+                <button class="number" style="grid-area: six">6</button>
+                <button class="operator" style="grid-area: sum">+</button>
+                            
+                <button class="number" style="grid-area: one">1</button>
+                <button class="number" style="grid-area: two">2</button>
+                <button class="number" style="grid-area: three">3</button>
+                <button class="operator" style="grid-area: sub">-</button>
+
+                <button class="number" style="grid-area: comma">.</button>
+                <button class="number" style="grid-area: zero">0</button>
+                <button class="assignment" style="grid-area: assign">=</button>
+            </section>
+        </article>
+    </main>
+    <script src="calculation.js"></script>
+</body>
+</html>

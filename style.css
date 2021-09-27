@@ -1,0 +1,130 @@
+@font-face {
+    font-family: "Calculator";
+    src: url(./assets/fonts/Calculator.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    background: linear-gradient(90deg, black, grey);
+    background-size: 300% 300%;
+    animation: colors 15s ease infinite;
+}
+
+main{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article{
+    height: 90%;
+    min-height: 30rem;
+    width: 30rem;
+    padding: 10px;
+    background-color: darkgray;
+    border: 5px solid gainsboro;
+    display: flex;
+    flex-direction: column;
+}
+
+#calculator-head{
+    color: white;
+    font: bold;
+    background-color: black;
+    height: 9rem;
+    
+    border: 2px solid gainsboro;
+    padding: 0px 30px;
+    font-family: Calculator;
+    font-weight: 100;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#stored-calculation{
+    text-align: end;
+    font-size: 30px;
+    padding-top: 20px;
+    max-width: 1rem;
+    height: 3rem;
+}
+
+#current-calculation{
+    text-align: start;
+    font-size: 60px;
+    padding-bottom: 20px;
+    width: 100%;
+    max-width: 27.875rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#blink-text{
+    animation: blink 1000ms infinite;
+}
+
+#calculator-body{
+    padding-top: 8px;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+            "ac ac del div"
+            "seven eight nine mult"
+            "four five six sum"
+            "one two three sub"
+            "comma zero assign assign";
+    gap: 2px;
+    flex: 1;
+}
+
+#calculator-body button{
+    height: 100%;
+    width: 100%;
+    min-width: 100px;
+    text-align: center;
+    background-color: gainsboro;
+    font-family: Calculator;
+    font-weight: 100;
+    font-size: 55px;
+    font: bold;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#calculator-body button:hover{
+    opacity: 0.7;
+}
+
+@keyframes blink {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes colors {
+    0%{
+       background-position: 0% 50%; 
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
