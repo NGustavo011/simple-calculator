@@ -1,12 +1,12 @@
-# Calculadora
+# CALCULADORA
 
-#### DESCRIÇÃO :hash:
+#### Descrição :hash:
 
 Uma calculadora com funções básicas, feita para treinar desenvolvimento web. 
 
-#### Heroku :link:
+#### GitHub Pages 📄
 
-https://simple-calculator-ngustavo011.herokuapp.com/
+https://ngustavo011.github.io/simple-calculator/
 
 #### Sobre mim :man_student:
 
